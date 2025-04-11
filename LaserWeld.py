@@ -1,15 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 11 15:09:31 2025
-
-@author: shmads
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 11 13:55:01 2025
-@author: shmads
-"""
 import streamlit as st
 import numpy as np
 import joblib

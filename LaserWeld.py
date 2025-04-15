@@ -50,8 +50,9 @@ y_pred = scaler_Y.inverse_transform(y_pred_scaled.reshape(-1, 1))[0][0]
 y_std = y_std_scaled[0] * scaler_Y.scale_[0]
 
 # Display the prediction results
-st.write(f"**Predicted Porosity**: {y_pred:.2f}%")
-st.write(f"**Standard Deviation**: {y_std:.2f}%")
+st.markdown(f"<span style='color:#ff5733; font-weight:bold;'>Predicted Porosity: {y_pred:.2f}%</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color:#3399ff; font-weight:bold;'>Standard Deviation: {y_std:.2f}%</span>", unsafe_allow_html=True)
+
 
 # Add a reference to the article or data
 st.write("Reference: The model was trained using data from : Toward prediction and insight of porosity formation in laser welding: A physics-informed deep learning framework.")
